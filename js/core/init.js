@@ -1,6 +1,4 @@
 import { initMap, renderMap, enableMapScroll } from '../map/grid.js';
-import { loadBuildings } from '../building/buildingData.js';
-import { loadUnits } from '../unit/unitData.js';
 
 const canvas = document.getElementById('gameCanvas');
 canvas.width = window.innerWidth;
@@ -23,8 +21,6 @@ function updateOverlay() {
 
 export function initGame() {
     initMap();
-    loadBuildings();
-    loadUnits();
     enableMapScroll(canvas);
     renderMap(ctx);
     updateOverlay();
