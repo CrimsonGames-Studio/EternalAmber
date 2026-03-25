@@ -1,1 +1,21 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
 
+#gameCanvas {
+    background-color: #1a1a1a;
+    display: block;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
