@@ -1,0 +1,14 @@
+# Node / JS
+node_modules/
+*.log
+
+# Build / APK Output
+/build/
+*.apk
+*.dex
+*.bin
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
