@@ -29,7 +29,8 @@ export function enableMapScroll(canvas) {
 }
 
 export function renderMap(ctx) {
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    ctx.fillStyle = '#1a1a1a';
+    ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     for (let y = 0; y < gameMap.length; y++) {
         for (let x = 0; x < gameMap[y].length; x++) {
             const screenX = x * tileSize + offsetX;
